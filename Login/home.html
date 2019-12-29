@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+ Home
+</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form name="login" id="form">
+    <label for="emailid">Email Id</label>&nbsp;
+<input type="text" id="emailid" name="emailid" required/>
+<br>
+<label for="Password">Password</label>
+<input type="password" id="password" name="pswrd" required/>
+<br>
+<input type="button" onclick="homeLogin(this.form)" value="Login" id="loginbtn"/>
+
+<input type="button" onclick="validate()" value="register" id="registerbtn"/>
+</form>
+
+<script language="javascript">
+function validate()
+{
+ window.open('register.html');
+ }
+ function homeLogin(form)
+ {
+ var emailid = document.getElementById("emailid").value;
+var password = document.getElementById("password").value;
+if ( emailid == "user@gmail.com" && password == "123456"){
+alert ("Login successfully");
+window.open('dashboard.html'); // Redirecting to other page.
+
+ }
+ else{
+     alert("please enter the correct user name and password");
+ }
+ }
+
+
+ 
+</script>
+</body>
+</html>

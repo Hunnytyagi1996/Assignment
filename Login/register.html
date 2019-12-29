@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+registration
+</title>
+<link rel="stylesheet" href="main.css">
+<script src=dashboard.js"></script>
+</head>
+<body>
+ 
+<form  onSubmit = "return checkPassword(this)"  method="get" action="home.html" id="form">
+        <h1>Register here!</h1>
+<label for="First Name">First Name</label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<input type="text"  name="First Name" required/>
+
+<br>
+<label for="Middle Name">Middle Name</label>
+&nbsp; &nbsp;
+<input type="text" name="Middle Name"/>
+<br>
+<label for="Last Name">Last Name</label> &nbsp; &nbsp;
+&nbsp; &nbsp;
+&nbsp;
+<input type="text" name="Last Name" required />
+<br>
+<label for="Email">Email</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;
+<input type="text" name="Email" required/>
+<br>
+<label for="Email">Mobile Number</label>
+&nbsp; 
+<input type="tel" name="Mobile Number" />
+<br>
+<label for="password">Password</label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="password" name="password"required/>
+<br>
+<label for="confirmpassword">confirm password</label>
+<input type="password" name="confirmpassword" required/>
+<br>
+<input type="submit" value="register"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>
+      dashboard
+    </title>
+    
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+  <body>
+    <table id="cust">
+      <tr>
+        <td>
+          <h1>Manage user Dashboard </h1>
+          <form onSubmit="event.preventDefault(); onFormSubmit()" autocomplete="off" id="form">
+            <div>
+          <label>ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="id" id="id">
+          </div>
+          <div>
+              <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" name="name"id="name">
+              </div>
+              <div>
+                  <label>Email Id</label>
+                  <input type="text" name="emailid" id="emailid">
+                  </div>
+                  <div>
+                      <label>Salary</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="salary" id="salary">
+                      </div>
+                  <div>
+                  <div>
+                      <label>Year</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="year" id="year">
+                      </div>
+                  <div>
+                      <label>City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="city" id="city">
+                      </div>
+                      <div>
+                          <label>Country</label>
+                          <input type="text" name="country" id="country">
+                          </div>
+
+                      <div class="form-action-buttons" >
+                        <input type="submit" value="submit">
+                      </div>
+          </form>
+        </td>
+        <td>
+          <table class="list" id="employeelist">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email Id</th>
+                <th>Salary</th>
+                <th>year</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Edit/Delete options </th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+         </td>
+      </tr>
+    </table>
+ 
+    <script src="dashboard.js"></script>
+  </body>
+</html>
